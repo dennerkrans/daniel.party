@@ -1,17 +1,18 @@
 {
-  "name": "portfolio-simple",
+  "name": "daniel.party",
   "description": "A Vue.js project",
   "version": "1.0.0",
   "author": "dennerkrans <dennerkrans@gmail.com>",
   "private": true,
+  "now": {
+    "name": "daniel.party",
+    "alias": "daniel.party"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "now-start": "node ./server.js",
     "deploy": "now ./dist && now alias"
-  },
-  "now": {
-    "alias": "daniel.party"
   },
   "dependencies": {
     "pug": "^2.0.0-beta11",
