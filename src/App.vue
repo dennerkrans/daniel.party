@@ -23,6 +23,7 @@ export default {
         { type: 'social', items: [
           { name: 'Twitter', link: 'https://twitter.com/dennerkrans', meta: ''},
           { name: 'Github', link: 'https://github.com/dennerkrans', meta: ''},
+          { name: 'LinkedIn', link: 'https://www.linkedin.com/in/danieldennerkrans/', meta: ''},
           { name: 'Email', link: 'mailto:daniel.dennerkrans@hyperisland.se?Subject=Well%20hello%20there.', meta: ''}
         ]},
         { type: 'work', items: [
