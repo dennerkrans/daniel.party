@@ -29,6 +29,7 @@ export default {
         { type: 'work', items: [
           { name: 'Inside a strangers mind', link: 'https://medium.com/wolfmother-co/tele2-inside-a-strangers-mind-d27bbf499f72#.v26onwbpf', meta: 'Developer @ Wolfmother'},
           { name: 'Getsomehelp', link: 'http://www.getsomehelp.se/', meta: 'Frontend @ Wolfmother'},
+          { name: 'WrittenByZoe', link: 'http://www.writtenbyzoe.com/', meta: 'Developer @ Wolfmother'},
           { name: 'Green vacuum', link: 'https://vimeo.com/139375868', meta: 'Developer and producer @ Hyper Island'},
           { name: 'Carmen Moves', link: '/carmen', meta: 'Innovation & Prototyping @ DDB'},
         ]},
