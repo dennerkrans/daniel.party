@@ -3,45 +3,51 @@
     .Content
       h1.Content-title {{ title }}
       .Content-sections
-        .Content-section(v-for='section in sections' v-bind:class='"Content-section--" + section.type')
-          h2.Content-title--section {{ section.type }}
-          ul.Content-list
-            li.Content-listItem(v-for='item in section.items')
-              a.Content-listLink(:href='item.link') {{ item.name }}
-              span.Content-linkMeta(v-if='item.meta') {{ item.meta }}
+        content-section(v-for='(section, i) in sections' v-bind:type='section.type' v-bind:items='section.items' key=`section-${i}`)
     p.VisualManifesto {{ visualManifesto }}
 
 </template>
 
 <script>
+import ContentSection from './components/ContentSection.vue'
+
 export default {
   name: 'app',
-  data () {
+  data() {
     return {
       title: 'Daniel Dennerkrans',
       sections: [
-        { type: 'social', items: [
-          { name: 'Twitter', link: 'https://twitter.com/dennerkrans', meta: ''},
-          { name: 'Github', link: 'https://github.com/dennerkrans', meta: ''},
-          { name: 'LinkedIn', link: 'https://www.linkedin.com/in/danieldennerkrans/', meta: ''},
-          { name: 'Email', link: 'mailto:daniel.dennerkrans@hyperisland.se?Subject=Well%20hello%20there.', meta: ''}
-        ]},
-        { type: 'work', items: [
-          { name: 'Inside a strangers mind', link: 'https://medium.com/wolfmother-co/tele2-inside-a-strangers-mind-d27bbf499f72#.v26onwbpf', meta: 'Developer @ Wolfmother'},
-          { name: 'Getsomehelp', link: 'http://www.getsomehelp.se/', meta: 'Frontend @ Wolfmother'},
-          { name: 'WrittenByZoe', link: 'http://www.writtenbyzoe.com/', meta: 'Developer @ Wolfmother'},
-          { name: 'Green vacuum', link: 'https://vimeo.com/139375868', meta: 'Developer and producer @ Hyper Island'},
-          { name: 'Carmen Moves', link: '/carmen', meta: 'Innovation & Prototyping @ DDB'},
-        ]},
-        { type: 'other', items: [
-          { name: 'Sunday game brunch', link: 'https://dennerkrans.github.io/sunday-game-brunch/', meta: 'GM and developer'},
-          { name: 'Polar balance', link: 'https://dennerkrans.itch.io/polarbalance', meta: 'Unity'},
-          { name: 'Balls', link: '/processing/balls', meta: 'Processing experiment'},
-          { name: 'Walk on home', link: '/walkonhome', meta: 'Early dev project'}
-        ]}
+        {
+          type: 'social', items: [
+            { name: 'Twitter', link: 'https://twitter.com/dennerkrans', meta: '' },
+            { name: 'Github', link: 'https://github.com/dennerkrans', meta: '' },
+            { name: 'LinkedIn', link: 'https://www.linkedin.com/in/danieldennerkrans/', meta: '' },
+            { name: 'Email', link: 'mailto:daniel.dennerkrans@hyperisland.se?Subject=Well%20hello%20there.', meta: '' }
+          ]
+        },
+        {
+          type: 'work', items: [
+            { name: 'Inside a strangers mind', link: 'https://medium.com/wolfmother-co/tele2-inside-a-strangers-mind-d27bbf499f72#.v26onwbpf', meta: 'Developer @ Wolfmother' },
+            { name: 'Getsomehelp', link: 'http://www.getsomehelp.se/', meta: 'Frontend @ Wolfmother' },
+            { name: 'WrittenByZoe', link: 'http://www.writtenbyzoe.com/', meta: 'Developer @ Wolfmother' },
+            { name: 'Green vacuum', link: 'https://vimeo.com/139375868', meta: 'Developer and producer @ Hyper Island' },
+            { name: 'Carmen Moves', link: '/carmen', meta: 'Innovation & Prototyping @ DDB' },
+          ]
+        },
+        {
+          type: 'other', items: [
+            { name: 'Sunday game brunch', link: 'https://dennerkrans.github.io/sunday-game-brunch/', meta: 'GM and developer' },
+            { name: 'Polar balance', link: 'https://dennerkrans.itch.io/polarbalance', meta: 'Unity' },
+            { name: 'Balls', link: '/processing/balls', meta: 'Processing experiment' },
+            { name: 'Walk on home', link: '/walkonhome', meta: 'Early dev project' }
+          ]
+        }
       ],
       visualManifesto: '🐶 ☕️ 🤗'
     }
+  },
+  components: {
+    ContentSection
   }
 }
 </script>
