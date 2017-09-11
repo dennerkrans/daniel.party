@@ -27,7 +27,7 @@ export default {
         },
         {
           type: 'work', items: [
-            { name: 'Inside the head', link: 'https://insidethehead', meta: 'Developer @ Side project' },
+            { name: 'Inside the head', link: 'https://insidethehead.co', meta: 'Developer @ Side project' },
             { name: 'Inside a strangers mind', link: 'https://medium.com/wolfmother-co/tele2-inside-a-strangers-mind-d27bbf499f72#.v26onwbpf', meta: 'Developer @ Wolfmother' },
             { name: 'Getsomehelp', link: 'http://www.getsomehelp.se/', meta: 'Frontend @ Wolfmother' },
             { name: 'WrittenByZoe', link: 'http://www.writtenbyzoe.com/', meta: 'Developer @ Wolfmother' },
