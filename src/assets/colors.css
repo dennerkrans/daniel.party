@@ -1,0 +1,5 @@
+:root {
+  --gradient-social: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  --gradient-work: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-other: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
