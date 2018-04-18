@@ -46,8 +46,8 @@ export default {
               name: 'Green vacuum',
               link: 'https://vimeo.com/139375868',
               meta: 'Developer and producer @ Hyper Island'
-            },
-            { name: 'Carmen Moves', link: '/carmen', meta: 'Innovation & Prototyping @ DDB' }
+            }
+            // { name: 'Carmen Moves', link: '/carmen', meta: 'Innovation & Prototyping @ DDB' }
           ]
         },
         {
@@ -58,9 +58,9 @@ export default {
               link: 'https://dennerkrans.github.io/sunday-game-brunch/',
               meta: 'GM and developer'
             },
-            { name: 'Polar balance', link: 'https://dennerkrans.itch.io/polarbalance', meta: 'Unity' },
-            { name: 'Balls', link: '/processing/balls', meta: 'Processing experiment' },
-            { name: 'Walk on home', link: '/walkonhome', meta: 'Early dev project' }
+            { name: 'Polar balance', link: 'https://dennerkrans.itch.io/polarbalance', meta: 'Unity' }
+            // { name: 'Balls', link: '/processing/balls', meta: 'Processing experiment' },
+            // { name: 'Walk on home', link: '/walkonhome', meta: 'Early dev project' }
           ]
         }
       ],
@@ -154,12 +154,12 @@ ul
   font-weight: 400
 
 .Content-award
+  cursor: pointer
   position: relative
   display: inline-block
   font-size: 1.2rem
   margin-left: 4px
   .Content-award--info
-    cursor: pointer
     font-size: 1rem
     visibility: hidden
     background-color: black
