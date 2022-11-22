@@ -8,7 +8,7 @@ With desperation comes productivity, and so did this way too simple portfolio (i
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:5173
 npm run dev
 
 # build for production with minification
