@@ -1,6 +1,6 @@
 # [daniel.party](https://daniel.party)
 
-With desperation comes productivity, and so did this way too simple portfolio (if you even can call it that) site. It was built using [Vue](https://github.com/vuejs/vue) which is always a delight 🤗
+Years has gone since I with desperation did anything with this way too simple portfolio (if you even can call it that) site. It was built using [Vue](https://vuejs.org/) which is always a delight 🤗 and now it is time for version **2**.
 
 ## Build Setup
 
