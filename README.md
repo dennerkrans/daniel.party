@@ -4,13 +4,24 @@ With desperation comes productivity, and so did this way too simple portfolio (i
 
 ## Build Setup
 
-``` bash
+Vue 3 on [Vite+](https://viteplus.dev) (`vp`), with pnpm.
+
+```bash
 # install dependencies
-yarn install
+vp install
 
-# serve with hot reload at localhost:8080
-yarn dev
+# serve with hot reload
+vp dev
 
-# build for production with minification
-yarn build
+# format, lint
+vp check
+
+# build for production
+vp build
 ```
+
+## Deploy
+
+Hosted on Vercel (project `danielparty`). Pushing to `master` deploys to production; other branches get preview deployments.
+
+The Vercel project needs the env var `ENABLE_EXPERIMENTAL_COREPACK=1` so it installs with the pnpm version pinned in `package.json`.

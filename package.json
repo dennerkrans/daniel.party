@@ -1,36 +1,24 @@
 {
   "name": "daniel.party",
-  "description": "A Vue.js project",
-  "version": "1.0.0",
-  "author": "dennerkrans <dennerkrans@gmail.com>",
   "private": true,
-  "now": {
-    "name": "daniel.party",
-    "alias": "daniel.party"
-  },
+  "type": "module",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "now-start": "node ./server.js",
-    "deploy": "now ./dist && now alias"
+    "dev": "vp dev",
+    "build": "vp build",
+    "preview": "vp preview",
+    "check": "vp check"
   },
   "dependencies": {
-    "mo-js": "^0.288.2",
-    "pug": "^2.0.0-beta11",
-    "vue": "^2.2.1"
+    "@mojs/core": "^1.7.1",
+    "vue": "^3.5.44"
   },
   "devDependencies": {
-    "babel-core": "^6.0.0",
-    "babel-loader": "^6.0.0",
-    "babel-preset-latest": "^6.0.0",
-    "cross-env": "^3.0.0",
-    "css-loader": "^0.25.0",
-    "file-loader": "^0.9.0",
-    "node-sass": "^4.5.0",
-    "sass-loader": "^5.0.1",
-    "vue-loader": "^11.1.4",
-    "vue-template-compiler": "^2.2.1",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.0"
-  }
+    "@vitejs/plugin-vue": "^6.0.10",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "packageManager": "pnpm@10.34.6"
 }
